@@ -1,0 +1,39 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        input, select{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="col-md-5">
+<form action="/users" method="post" class="well">
+    <fieldset>
+        <div class="form-group">
+        <legend>Language Survey</legend>
+        Name: <input type="text" name="name"><br>
+        Dojo Location:
+        <select name="location">
+            <option>San Jose</option>
+            <option>Seattle</option>
+            <option>Mountain View</option>
+        </select><br>
+        Favorite Language:
+        <select name="language">
+            <option>Php</option>
+            <option>Python</option>
+            <option>Javascript</option>
+        </select><br>
+        Comment (optional): <br>
+        <textarea name="comment" id="" cols="55" rows="10"></textarea><br><br>
+            <input type="submit" class="btn btn-success" value="SUBMIT">
+        </div>
+    </fieldset>
+</form>
+    </div>
+</div>
+</body>
+</html>
